@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +8,16 @@ import { RouterLink } from '@angular/router';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
-export class HomeComponent {}
+export class HomeComponent implements AfterViewInit {
+  ngAfterViewInit(): void {
+    AOS.init({
+      offset: 100, // offset (in px) from the original trigger point
+      duration: 800, // animation duration
+      easing: 'ease-in-out',
+      delay: 100,
+      once: false, // animate on every scroll
+      mirror: true, // animate out when scrolling past the element
+    });
+    AOS.refresh();
+  }
+}
