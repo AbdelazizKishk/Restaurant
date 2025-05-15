@@ -1,0 +1,28 @@
+<section>
+  <div
+    class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4"
+  >
+    @for (item of mealRecipes(); track item.recipe_id) {
+    <div class="bg-white shadow-custom rounded-xl overflow-hidden">
+      <img
+        [src]="item.image_url"
+        [alt]="item.title"
+        class="w-full h-40 object-cover"
+      />
+      <div class="p-4">
+        <h2 class="text-lg font-semibold text-gray-800">
+          {{ item.title.split(" ", 3).join(" ") }}
+        </h2>
+        <p class="text-sm text-gray-500 mt-1">{{ item.publisher }}</p>
+        <a
+          [href]="item.source_url"
+          target="_blank"
+          class="inline-block mt-3 bg-main-color text-white p-2 rounded-md text-sm"
+        >
+          View Recipe
+        </a>
+      </div>
+    </div>
+    }
+  </div>
+</section>
