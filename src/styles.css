@@ -2,6 +2,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #39db4a;
+    border-radius: 3px;
+  }
+}
 
 body {
   font-family: "Inter", sans-serif;
