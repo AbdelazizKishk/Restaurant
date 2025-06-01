@@ -1,12 +1,14 @@
 <!-- Footer -->
-<footer class="container bg-white border-t mt-12">
+<footer
+  class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700"
+>
   <div
-    class=" mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm text-gray-600"
+    class="mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm text-gray-600 dark:text-gray-300"
   >
     <!-- Brand -->
     <div>
       <a
-        class="flex gap-1 mb-2 text-xl font-bold text-white dark:text-white tracking-wide"
+        class="flex gap-1 mb-2 text-xl font-bold text-gray-900 dark:text-white tracking-wide"
       >
         <img
           class="bg-main-color p-2 rounded-lg shadow-custom"
@@ -15,8 +17,10 @@
         />
         <img src="/images/oodi.svg" alt="logo" />
       </a>
-      <p>Savor the artistry where every dish is a culinary masterpiece</p>
-      <div class="flex space-x-4 mt-4 text-2xl text-black">
+      <p class="text-gray-700 dark:text-gray-300">
+        Savor the artistry where every dish is a culinary masterpiece
+      </p>
+      <div class="flex space-x-4 mt-4 text-2xl text-black dark:text-gray-200">
         <a href="https://wa.me/+201061037276"
           ><i class="fa-brands fa-whatsapp hover:text-main-color"></i
         ></a>
@@ -35,37 +39,87 @@
 
     <!-- Useful Links -->
     <div>
-      <h3 class="font-semibold text-gray-800 mb-3">Useful links</h3>
+      <h3 class="font-semibold text-gray-800 dark:text-gray-100 mb-3">
+        Useful links
+      </h3>
       <ul class="space-y-2">
-        <li><a href="#" class="hover:underline">About us</a></li>
-        <li><a href="#" class="hover:underline">Events</a></li>
-        <li><a href="#" class="hover:underline">Blogs</a></li>
-        <li><a href="#" class="hover:underline">FAQ</a></li>
+        <li>
+          <a href="#" class="hover:underline dark:hover:text-main-color"
+            >About us</a
+          >
+        </li>
+        <li>
+          <a href="#" class="hover:underline dark:hover:text-main-color"
+            >Events</a
+          >
+        </li>
+        <li>
+          <a href="#" class="hover:underline dark:hover:text-main-color"
+            >Blogs</a
+          >
+        </li>
+        <li>
+          <a href="#" class="hover:underline dark:hover:text-main-color">FAQ</a>
+        </li>
       </ul>
     </div>
 
     <!-- Main Menu -->
     <div>
-      <h3 class="font-semibold text-gray-800 mb-3">Main Menu</h3>
+      <h3 class="font-semibold text-gray-800 dark:text-gray-100 mb-3">
+        Main Menu
+      </h3>
       <ul class="space-y-2">
-        <li><a routerLink="home" class="hover:underline">Home</a></li>
-        <li><a routerLink="services" class="hover:underline">Services</a></li>
-        <li><a routerLink="menu" class="hover:underline">Menus</a></li>
-        <li><a routerLink="offers" class="hover:underline">Offers</a></li>
+        <li>
+          <a
+            routerLink="home"
+            class="hover:underline dark:hover:text-main-color"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="services"
+            class="hover:underline dark:hover:text-main-color"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="menu"
+            class="hover:underline dark:hover:text-main-color"
+            >Menus</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="offers"
+            class="hover:underline dark:hover:text-main-color"
+            >Offers</a
+          >
+        </li>
       </ul>
     </div>
 
     <!-- Contact -->
     <div>
-      <h3 class="font-semibold text-gray-800 mb-3">Contact Us</h3>
-      <ul class="space-y-2">
+      <h3 class="font-semibold text-gray-800 dark:text-gray-100 mb-3">
+        Contact Us
+      </h3>
+      <ul class="space-y-2 text-gray-700 dark:text-gray-300">
         <li>abdelazizkishk19{{ "@" }}gmail.com</li>
         <li>+201061037276</li>
-        <li><a href="#" class="hover:underline">Egypt,Cario</a></li>
+        <li>
+          <a href="#" class="hover:underline dark:hover:text-main-color"
+            >Egypt, Cairo</a
+          >
+        </li>
       </ul>
     </div>
   </div>
-  <div class="text-center text-xs text-gray-500 py-4 border-t">
+  <div
+    class="text-center text-xs text-gray-500 dark:text-gray-400 py-4 border-t border-gray-200 dark:border-gray-700"
+  >
     © 2024 Abdelaziz Mohamed | All rights reserved.
   </div>
 </footer>

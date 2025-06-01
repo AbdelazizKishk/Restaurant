@@ -1,7 +1,10 @@
-<section class="py-20 px-6 md:px-16 bg-gray-50 min-h-screen">
+<section
+  class="py-20 px-6 md:px-16 bg-gray-50 dark:bg-gray-900 min-h-screen transition-colors duration-300"
+>
   <h2 class="text-4xl font-bold text-center mb-12 text-main-color uppercase">
     Our Menu
   </h2>
+
   <h3 class="text-3xl font-semibold mb-2 text-primary-color">Main Dishes</h3>
   <div
     class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-8"
@@ -9,7 +12,7 @@
   >
     <div
       [routerLink]="['/meal', 'pizza']"
-      class="bg-white cursor-pointer rounded-2xl shadow-md hover:shadow-lg transition duration-300"
+      class="bg-white dark:bg-gray-800 cursor-pointer rounded-2xl shadow-md hover:shadow-lg transition duration-300"
     >
       <img
         src="/images/meals/pizza.png"
@@ -17,13 +20,15 @@
         class="rounded-t-2xl w-full h-48 object-contain"
       />
       <div class="p-4 text-center border-2 border-main-color rounded-b-2xl">
-        <h3 class="text-xl font-semibold text-gray-800">PIZZA</h3>
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
+          PIZZA
+        </h3>
       </div>
     </div>
 
     <div
       [routerLink]="['/meal', 'pasta']"
-      class="bg-white cursor-pointer rounded-2xl shadow-md hover:shadow-lg transition duration-300"
+      class="bg-white dark:bg-gray-800 cursor-pointer rounded-2xl shadow-md hover:shadow-lg transition duration-300"
     >
       <img
         src="/images/meals/pasta.jpeg"
@@ -31,12 +36,15 @@
         class="rounded-t-2xl w-full h-48 object-cover"
       />
       <div class="p-4 text-center border-2 border-main-color rounded-b-2xl">
-        <h3 class="text-xl font-semibold text-gray-800">PASTA</h3>
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
+          PASTA
+        </h3>
       </div>
     </div>
+
     <div
       [routerLink]="['/meal', 'chicken']"
-      class="bg-white cursor-pointer rounded-2xl shadow-md hover:shadow-lg transition duration-300"
+      class="bg-white dark:bg-gray-800 cursor-pointer rounded-2xl shadow-md hover:shadow-lg transition duration-300"
     >
       <img
         src="/images/meals/chicken.jpg"
@@ -44,12 +52,15 @@
         class="rounded-t-2xl w-full h-48 object-cover"
       />
       <div class="p-4 text-center border-2 border-main-color rounded-b-2xl">
-        <h3 class="text-xl font-semibold text-gray-800">CHICKEN</h3>
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
+          CHICKEN
+        </h3>
       </div>
     </div>
+
     <div
       [routerLink]="['/meal', 'fish']"
-      class="bg-white cursor-pointer rounded-2xl shadow-md hover:shadow-lg transition duration-300"
+      class="bg-white dark:bg-gray-800 cursor-pointer rounded-2xl shadow-md hover:shadow-lg transition duration-300"
     >
       <img
         src="/images/meals/fish.jpg"
@@ -57,10 +68,13 @@
         class="rounded-t-2xl w-full h-48 object-cover"
       />
       <div class="p-4 text-center border-2 border-main-color rounded-b-2xl">
-        <h3 class="text-xl font-semibold text-gray-800">FISH</h3>
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
+          FISH
+        </h3>
       </div>
     </div>
   </div>
+
   <h3 class="text-3xl font-semibold mb-2 text-primary-color">Sandwiches</h3>
   <div
     class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-8"
@@ -68,7 +82,7 @@
   >
     <div
       [routerLink]="['/meal', 'hamburger']"
-      class="bg-white cursor-pointer rounded-2xl shadow-md hover:shadow-lg transition duration-300"
+      class="bg-white dark:bg-gray-800 cursor-pointer rounded-2xl shadow-md hover:shadow-lg transition duration-300"
     >
       <img
         src="/images/meals/Hamburger.jpg"
@@ -76,10 +90,13 @@
         class="rounded-t-2xl w-full h-48 object-cover"
       />
       <div class="p-4 text-center border-2 border-main-color rounded-b-2xl">
-        <h3 class="text-xl font-semibold text-gray-800">HAMBURGER</h3>
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
+          HAMBURGER
+        </h3>
       </div>
     </div>
   </div>
+
   <h3 class="text-3xl font-semibold mb-2 text-primary-color">
     Salads & Appetizers
   </h3>
@@ -89,7 +106,7 @@
   >
     <div
       [routerLink]="['/meal', 'salad']"
-      class="bg-white cursor-pointer rounded-2xl shadow-md hover:shadow-lg transition duration-300"
+      class="bg-white dark:bg-gray-800 cursor-pointer rounded-2xl shadow-md hover:shadow-lg transition duration-300"
     >
       <img
         src="/images/meals/salad.jpg"
@@ -97,12 +114,15 @@
         class="rounded-t-2xl w-full h-48 object-cover"
       />
       <div class="p-4 text-center border-2 border-main-color rounded-b-2xl">
-        <h3 class="text-xl font-semibold text-gray-800">SALAD</h3>
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
+          SALAD
+        </h3>
       </div>
     </div>
+
     <div
       [routerLink]="['/meal', 'corn']"
-      class="bg-white cursor-pointer rounded-2xl shadow-md hover:shadow-lg transition duration-300"
+      class="bg-white dark:bg-gray-800 cursor-pointer rounded-2xl shadow-md hover:shadow-lg transition duration-300"
     >
       <img
         src="/images/meals/corn.jpg"
@@ -110,10 +130,13 @@
         class="rounded-t-2xl w-full h-48 object-cover"
       />
       <div class="p-4 text-center border-2 border-main-color rounded-b-2xl">
-        <h3 class="text-xl font-semibold text-gray-800">CORN</h3>
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
+          CORN
+        </h3>
       </div>
     </div>
   </div>
+
   <h3 class="text-3xl font-semibold mb-2 text-primary-color">Fresh Juices</h3>
   <div
     class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-8"
@@ -121,7 +144,7 @@
   >
     <div
       [routerLink]="['/meal', 'mango']"
-      class="bg-white cursor-pointer rounded-2xl shadow-md hover:shadow-lg transition duration-300"
+      class="bg-white dark:bg-gray-800 cursor-pointer rounded-2xl shadow-md hover:shadow-lg transition duration-300"
     >
       <img
         src="/images/meals/orangejuice.jpg"
@@ -129,10 +152,13 @@
         class="rounded-t-2xl w-full h-48 object-cover"
       />
       <div class="p-4 text-center border-2 border-main-color rounded-b-2xl">
-        <h3 class="text-xl font-semibold text-gray-800">FRESH JUICE</h3>
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
+          FRESH JUICE
+        </h3>
       </div>
     </div>
   </div>
+
   <h3 class="text-3xl font-semibold mb-2 text-primary-color">Ice Cream</h3>
   <div
     class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-8"
@@ -140,7 +166,7 @@
   >
     <div
       [routerLink]="['/meal', 'ice cream']"
-      class="bg-white cursor-pointer rounded-2xl shadow-md hover:shadow-lg transition duration-300"
+      class="bg-white dark:bg-gray-800 cursor-pointer rounded-2xl shadow-md hover:shadow-lg transition duration-300"
     >
       <img
         src="/images/meals/Ice-cream.jpg"
@@ -148,7 +174,9 @@
         class="rounded-t-2xl w-full h-48 object-cover"
       />
       <div class="p-4 text-center border-2 border-main-color rounded-b-2xl">
-        <h3 class="text-xl font-semibold text-gray-800">ICE CREAM</h3>
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
+          ICE CREAM
+        </h3>
       </div>
     </div>
   </div>

@@ -1,11 +1,13 @@
-<nav class="fixed w-full z-50 bg-white">
+<nav
+  class="fixed w-full z-50 bg-white dark:bg-gray-900 transition-colors duration-300"
+>
   <div
     class="max-w-screen-xl mx-auto px-4 py-3 flex items-center justify-between"
   >
     <!-- Logo -->
     <a
       routerLink="/home"
-      class="flex gap-1 text-2xl font-bold text-white dark:text-white tracking-wide"
+      class="flex gap-1 text-2xl font-bold text-gray-900 dark:text-white tracking-wide"
     >
       <img
         class="bg-main-color p-2 rounded-lg shadow-custom"
@@ -24,7 +26,7 @@
       <svg
         class="w-6 h-6"
         fill="none"
-        stroke="black"
+        [attr.stroke]="isDark ? 'white' : 'black'"
         stroke-width="2"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
@@ -75,13 +77,25 @@
           Offers
         </a>
       </li>
+      <li>
+        <button
+          (click)="toggleTheme()"
+          class="flex items-center gap-2"
+          aria-label="Toggle theme"
+        >
+          @if (!isDark) {<span>🌙</span>} @if (isDark) {<span>☀️</span>}
+          <span class="hidden sm:inline">
+            {{ isDark ? "Light" : "Dark" }}
+          </span>
+        </button>
+      </li>
     </ul>
   </div>
 
   <!-- Mobile Menu -->
   @if(isMenuOpen){
   <div
-    class="md:hidden p-4 flex flex-col space-y-2 dark:bg-gray-900 text-black dark:text-gray-100"
+    class="md:hidden p-4 flex flex-col space-y-2 bg-white dark:bg-gray-900 text-black dark:text-gray-100 transition-colors duration-300"
   >
     <a
       routerLink="/home"
@@ -111,6 +125,16 @@
       class="hover:text-main-color"
       >Offers</a
     >
+    <button
+      (click)="toggleTheme()"
+      class="flex items-center gap-1"
+      aria-label="Toggle theme"
+    >
+      @if (!isDark) {<span>🌙</span>} @if (isDark) {<span>☀️</span>}
+      <span class="sm:inline">
+        {{ isDark ? "Light" : "Dark" }}
+      </span>
+    </button>
   </div>
   }
 </nav>
