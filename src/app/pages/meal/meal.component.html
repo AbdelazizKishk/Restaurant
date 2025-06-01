@@ -1,19 +1,25 @@
-<section class="meal-section pt-20">
+<section
+  class="meal-section pt-20 bg-white dark:bg-gray-900 text-black dark:text-white"
+>
   <div
     class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4"
   >
     @for (item of mealRecipes(); track item.recipe_id) {
-    <div class="bg-white shadow-custom rounded-xl overflow-hidden">
+    <div
+      class="bg-white dark:bg-gray-800 shadow-custom rounded-xl overflow-hidden"
+    >
       <img
         [src]="item.image_url"
         [alt]="item.title"
         class="w-full h-40 object-cover"
       />
       <div class="p-4">
-        <h2 class="text-lg font-semibold text-gray-800">
+        <h2 class="text-lg font-semibold text-gray-800 dark:text-white">
           {{ item.title.split(" ", 3).join(" ") }}
         </h2>
-        <p class="text-sm text-gray-500 mt-1">{{ item.publisher }}</p>
+        <p class="text-sm text-gray-500 dark:text-gray-300 mt-1">
+          {{ item.publisher }}
+        </p>
         <a
           [href]="item.source_url"
           target="_blank"

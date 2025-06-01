@@ -83,10 +83,10 @@
           class="flex items-center gap-2"
           aria-label="Toggle theme"
         >
-          @if (!isDark) {<span>🌙</span>} @if (isDark) {<span>☀️</span>}
           <span class="hidden sm:inline">
             {{ isDark ? "Light" : "Dark" }}
           </span>
+          @if (!isDark) {<span>🌙</span>} @if (isDark) {<span>☀️</span>}
         </button>
       </li>
     </ul>
@@ -129,11 +129,12 @@
       (click)="toggleTheme()"
       class="flex items-center gap-1"
       aria-label="Toggle theme"
+      (click)="isMenuOpen = false"
     >
-      @if (!isDark) {<span>🌙</span>} @if (isDark) {<span>☀️</span>}
       <span class="sm:inline">
         {{ isDark ? "Light" : "Dark" }}
       </span>
+      @if (!isDark) {<span>🌙</span>} @if (isDark) {<span>☀️</span>}
     </button>
   </div>
   }
